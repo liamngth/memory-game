@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Matching Game</title>
+</head>
+<body onload="restartGame()">
+    <div class="wrapper">
+        <!-- Header of the Game -->
+        <header id="head-section">
+            <h2>Matching Game</h2>
+        </header>
+        <!-- Main Body of The Game -->
+        <section id="info-section">
+            <div class="info-panel">
+                <ul class="star-rating">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <div>
+                    <span class="move-counter">0</span> Moves
+                </div>
+                <div class="timer">
+                    0 mins 0 seconds
+                </div>
+                <div class="restart-button" onclick="restartGame()">
+                    <i class="fa fa-repeat"></i>
+                </div>
+            </div>
+        </section>
+
+        <ul class="card-group" id="group-id">
+            <!-- Going to generate card item by script -->
+        </ul>
+
+        <!-- Congratulations Popup -->
+        <div class="modal fade" id="successModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Congratulations! You Won!</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>With <span id="total-move"></span> moves and <span id="star-rate"></span> stars in <span id="time"></span></p><br>
+                        <p>Do you want to play again?</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button class="btn" id="play-again" onclick="playAgain()">Play Again</button>
+                        <button class="btn" id="no" onclick="closeModal()">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
