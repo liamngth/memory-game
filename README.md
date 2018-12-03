@@ -12,9 +12,9 @@ If the cards match, both cards stay flipped over.
 If the cards do not match, both cards are flipped face down.
 The game ends once all cards have been correctly matched.
 
-* The game is developed by javascript. So it includes three files to run the game.
-   i. app.js is in js directory and it stores all the javascript codes
-   ii. style.css is in css directory and it stores all the css codes
-   iii. index.html is html code
+1. The game is developed by javascript. So it includes three files to run the game.
+i. app.js is in js directory and it stores all the javascript codes
+ii. style.css is in css directory and it stores all the css codes
+iii. index.html is html code
 
-To run the game. Openning the index.html file by a web browser 
+2. To run the game. Openning the index.html file by a web browser 
